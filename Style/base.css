@@ -1,0 +1,180 @@
+:root {
+    --color-background: #1f1e28e0;
+    --color-background-soft: #14abbe;
+    --color-accent: #000103;
+    --color-primary: #ffffff;
+    --color-secondary: #5ec0cd;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-accent);
+    font-size: 120%;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.highlight {
+    background: var(--color-primary);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+input:not([type='checkbox']) {
+    background: var(--color-background-soft);
+    border: none;
+    padding: 12px;
+    color: var(--color-accent);
+    width: 100%;
+    border-radius: 8px;
+}
+
+input[type='checkbox'] {
+    margin: 8px
+}
+
+
+@media (max-width: 650px) {
+    html {
+        font-size: 100%;
+    }
+
+
+    h1 {
+        margin-top: 0;
+        font-size: 1.802rem;
+    }
+
+    h2 {
+        font-size: 1.602rem;
+    }
+
+    h3 {
+        font-size: 1.424rem;
+    }
+
+    h4 {
+        font-size: 1.266rem;
+    }
+
+    h5 {
+        font-size: 1.125rem;
+    }
+
+    small,
+    .text-small {
+        font-size: 0.889rem;
+    }
+}
+
+
+body {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--color-accent);
+}
+
+
+p,
+label,
+small {
+    color: var(--color-accent-9);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    color: rgba(240, 248, 255, 0.9);
+}
+
+p{
+    padding: 16px 0;
+}
+
+h1 {
+    font-size: 2.488rem;
+    margin: 16px 0;
+}
+
+h2 {
+    font-size: 2.074rem;
+    margin: 16px 0;
+}
+
+h3 {
+    font-size: 1.728rem;
+}
+
+h4 {
+    font-size: 1.44rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+input,
+textarea {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+small,
+.text-small {
+    font-size: 0.833rem;
+}
+
+strong {
+    font-weight: 800;
+    color: var(--color-accent);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span {
+    color: var(--color-primary);
+}
+
+html {
+    scroll-behavior: smooth;
+}

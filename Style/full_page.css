@@ -1,0 +1,185 @@
+header {
+    margin-bottom: 64px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+header .top-bar {
+    padding: 32px 0 8px 0;
+    width: min(calc(100% - 112px), 1800px);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .top-bar>a>img.logo {
+    width: 96px;
+    height: 96px;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+}
+
+header .content ul {
+    display: flex;
+    align-items: center;
+}
+
+header .center-part {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header .center-part li {
+    list-style: none;
+}
+
+header .center-part a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-background-soft);
+    padding: 8px 16px;
+    border: 1px solid var(--color-background);
+    border-radius: 11px;
+    background-color: #FFE7E7;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+header .center-part a:hover {
+    background-color: #FFE3E3;
+    border-color: var(--color-secondary);
+}
+
+.button-1 {
+    background-color: #14aabe0e ! important;
+    border-radius: 11px;
+    color: var(--color-background-soft);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 2px 12px;
+    text-decoration: none;
+    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.button-1:hover {
+    background-color: #ffffff;
+
+}
+
+.button-1:active,
+.button-1:focus {
+    background-color: var(--color-background-soft);
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    outline: none;
+}
+a.button-1 {
+    text-decoration: none;
+    border: 1px solid var(--color-background);
+    background-color: #FFE7E7;
+    padding: 8px 16px;
+    font-weight: 700;
+    border-radius: 11px;
+    transition: 0.3s;
+}
+
+a.button-1:hover {
+    text-decoration: none;
+    background-color: #FFE3E3;
+    border-color: var(--color-secondary);
+}
+
+a.button-1:focus,
+a.button-1:active {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    background-color: var(--color-background-soft);
+    color: #ffffff;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.horizontal-line {
+    display: flex;
+    justify-content: center;
+    border: none;  /* Supprime la bordure par défaut */
+    border-top: 8px solid var(--color-background-soft);
+    margin: 20px auto;
+    width: 64%;
+}
+
+.my-projects img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logos-container img {
+    width: 12.5%;
+    height: auto;
+    object-fit: contain;
+    padding: 0 8px;
+}
+
+.email-link{
+    color: var(--color-background-soft);
+}
+
+.github-link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    font-size: 4rem;       
+    margin-top: 20px;
+}
+
+.contact-link {
+    color: #fffffff8;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--color-background-soft);
+}
+
+.docs-container{
+    display: flex;
+    justify-content: center;
+}
+
+.docs-container a {
+    margin: 8px;
+}
