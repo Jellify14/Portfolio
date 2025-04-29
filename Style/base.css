@@ -18,13 +18,21 @@ a {
     text-decoration: underline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--color-background);
     color: var(--color-accent);
     font-size: 120%;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
 }
 
 .bold {
@@ -118,7 +126,7 @@ p {
     color: rgba(240, 248, 255, 0.9);
 }
 
-p{
+p {
     padding: 16px 0;
 }
 
@@ -173,8 +181,4 @@ a:hover {
 
 span {
     color: var(--color-primary);
-}
-
-html {
-    scroll-behavior: smooth;
 }
