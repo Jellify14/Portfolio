@@ -6,24 +6,13 @@
     --color-secondary: #5ec0cd;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
-}
-
-a {
-    color: var(--color-primary);
-    text-decoration: underline;
-}
-
-* {
     scroll-behavior: smooth;
 }
 
-html,
-body {
+html, body {
     overflow-x: hidden;
 }
 
@@ -33,21 +22,17 @@ body {
     font-size: 120%;
     width: 100vw;
     height: 100vh;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
 }
 
-.bold {
-    font-weight: bold;
+a {
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
-.italic {
-    font-style: italic;
-}
-
-.highlight {
-    background: var(--color-primary);
-}
-
-.underline {
+a:hover {
     text-decoration: underline;
 }
 
@@ -61,65 +46,10 @@ input:not([type='checkbox']) {
 }
 
 input[type='checkbox'] {
-    margin: 8px
+    margin: 8px;
 }
 
-
-@media (max-width: 650px) {
-    html {
-        font-size: 100%;
-    }
-
-
-    h1 {
-        margin-top: 0;
-        font-size: 1.802rem;
-    }
-
-    h2 {
-        font-size: 1.602rem;
-    }
-
-    h3 {
-        font-size: 1.424rem;
-    }
-
-    h4 {
-        font-size: 1.266rem;
-    }
-
-    h5 {
-        font-size: 1.125rem;
-    }
-
-    small,
-    .text-small {
-        font-size: 0.889rem;
-    }
-}
-
-
-body {
-    font-family: "Mulish", sans-serif;
-    font-weight: 400;
-    line-height: 1.75;
-    color: var(--color-accent);
-}
-
-
-p,
-label,
-small {
-    color: var(--color-accent-9);
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
+h1, h2, h3, h4, h5, p {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     line-height: 1.3;
@@ -140,28 +70,18 @@ h2 {
     margin: 16px 0;
 }
 
-h3 {
-    font-size: 1.728rem;
-}
+h3 { font-size: 1.728rem; }
+h4 { font-size: 1.44rem; }
+h5 { font-size: 1.2rem; }
 
-h4 {
-    font-size: 1.44rem;
-}
-
-h5 {
-    font-size: 1.2rem;
-}
-
-input,
-textarea {
+input, textarea {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     line-height: 1.75;
     font-size: 1rem;
 }
 
-small,
-.text-small {
+small, .text-small {
     font-size: 0.833rem;
 }
 
@@ -170,15 +90,18 @@ strong {
     color: var(--color-accent);
 }
 
-a {
-    color: var(--color-primary);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 span {
     color: var(--color-primary);
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: 100%;
+    }
+    h1 { font-size: 1.802rem; margin-top: 0; }
+    h2 { font-size: 1.602rem; }
+    h3 { font-size: 1.424rem; }
+    h4 { font-size: 1.266rem; }
+    h5 { font-size: 1.125rem; }
+    small, .text-small { font-size: 0.889rem; }
 }
